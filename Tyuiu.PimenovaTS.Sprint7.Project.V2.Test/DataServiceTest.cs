@@ -8,8 +8,18 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidCalc()
         {
+            DataService ds = new DataService();
+
+            string path = @"C:\Sprint7\InPutDataFile.csv";
+
+            int row = 1;
+            int column = 1;
+            string res = ds.CollectTextFromFile(path, row, column);
+
+            string wait = "";
+            Assert.AreEqual(wait, res);
         }
     }
 }
