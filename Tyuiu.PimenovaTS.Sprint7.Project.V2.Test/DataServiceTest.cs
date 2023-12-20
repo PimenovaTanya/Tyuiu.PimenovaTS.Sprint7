@@ -14,11 +14,11 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2.Test
 
             string path = @"C:\Sprint7\InPutDataFile.csv";
 
-            int row = 1;
+            int row = 0;
             int column = 1;
             string res = ds.CollectTextFromFile(path, row, column);
 
-            string wait = "";
+            string wait = "тел.:8 (800) 200-90-02, почта: info@magnit.ru, головной офис: 350072, Россия, Краснодар, ул. Солнечная, 15/5";
             Assert.AreEqual(wait, res);
         }
     }
