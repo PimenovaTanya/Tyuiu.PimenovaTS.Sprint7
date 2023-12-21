@@ -12,11 +12,9 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2.Test
         {
             DataService ds = new DataService();
 
-            string path = @"C:\Sprint7\InPutDataFile.csv";
-
-            int row = 0;
+            string row = "Магнит";
             int column = 1;
-            string res = ds.CollectTextFromFile(path, row, column);
+            string res = ds.CollectTextFromFile(row, column);
 
             string wait = "тел.:8 (800) 200-90-02, почта: info@magnit.ru, головной офис: 350072, Россия, Краснодар, ул. Солнечная, 15/5";
             Assert.AreEqual(wait, res);

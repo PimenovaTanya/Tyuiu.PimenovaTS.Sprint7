@@ -29,6 +29,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -36,15 +37,13 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(652, 382);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Приложение предназначено для пользователей, которые интересуются различными сетям" +
-    "и магазинов. Оно поможет им узнать больше о самом магазине, его филиалах, а такж" +
-    "е о поставщиках этих магазинов.";
+            this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // FormAbout
             // 
@@ -54,7 +53,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             this.Controls.Add(this.textBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormAbout";

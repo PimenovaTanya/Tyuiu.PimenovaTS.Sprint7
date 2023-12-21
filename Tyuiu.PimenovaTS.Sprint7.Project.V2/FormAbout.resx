@@ -117,4 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Приложение предназначено для пользователей, которые интересуются различными сетями магазинов. Оно поможет им узнать больше о самом магазине, его филиалах, а также о поставщиках этих магазинов.
+
+Как работает программа?
+Пользователь вводит название магазина и выбирает категорию того, что он хочет найти. Далее нужно просто ввести цифру нужной категории и нажать кнопку "Найти".</value>
+  </data>
 </root>
