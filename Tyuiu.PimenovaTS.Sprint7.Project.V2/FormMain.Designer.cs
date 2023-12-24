@@ -38,11 +38,12 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             this.panelTop_PTS = new System.Windows.Forms.Panel();
             this.textBoxMain_PTS = new System.Windows.Forms.TextBox();
             this.groupBoxResult_PTS = new System.Windows.Forms.GroupBox();
+            this.textBoxCategory_PTS = new System.Windows.Forms.TextBox();
+            this.textBoxChoice_PTS = new System.Windows.Forms.TextBox();
+            this.buttonDone_PTS = new System.Windows.Forms.Button();
             this.groupBoxInPut_PTS = new System.Windows.Forms.GroupBox();
             this.textBoxShop_PTS = new System.Windows.Forms.TextBox();
-            this.buttonDone_PTS = new System.Windows.Forms.Button();
-            this.textBoxChoice_PTS = new System.Windows.Forms.TextBox();
-            this.textBoxCategory_PTS = new System.Windows.Forms.TextBox();
+            this.buttonMe_PTS = new System.Windows.Forms.Button();
             this.panelMain_PTS.SuspendLayout();
             this.panelTop_PTS.SuspendLayout();
             this.groupBoxResult_PTS.SuspendLayout();
@@ -52,6 +53,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             // panelMain_PTS
             // 
             this.panelMain_PTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panelMain_PTS.Controls.Add(this.buttonMe_PTS);
             this.panelMain_PTS.Controls.Add(this.buttonAbout_PTS);
             this.panelMain_PTS.Controls.Add(this.buttonHelp_PTS);
             this.panelMain_PTS.Controls.Add(this.buttonMain_PTS);
@@ -140,6 +142,38 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             this.groupBoxResult_PTS.TabStop = false;
             this.groupBoxResult_PTS.Text = "Выберите:";
             // 
+            // textBoxCategory_PTS
+            // 
+            this.textBoxCategory_PTS.Location = new System.Drawing.Point(6, 88);
+            this.textBoxCategory_PTS.Multiline = true;
+            this.textBoxCategory_PTS.Name = "textBoxCategory_PTS";
+            this.textBoxCategory_PTS.Size = new System.Drawing.Size(100, 35);
+            this.textBoxCategory_PTS.TabIndex = 5;
+            // 
+            // textBoxChoice_PTS
+            // 
+            this.textBoxChoice_PTS.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxChoice_PTS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxChoice_PTS.Location = new System.Drawing.Point(3, 20);
+            this.textBoxChoice_PTS.Multiline = true;
+            this.textBoxChoice_PTS.Name = "textBoxChoice_PTS";
+            this.textBoxChoice_PTS.ReadOnly = true;
+            this.textBoxChoice_PTS.Size = new System.Drawing.Size(695, 62);
+            this.textBoxChoice_PTS.TabIndex = 4;
+            this.textBoxChoice_PTS.Text = "1. Общие контакты\r\n2. О компании\r\n3. Филиалы";
+            // 
+            // buttonDone_PTS
+            // 
+            this.buttonDone_PTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonDone_PTS.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonDone_PTS.Location = new System.Drawing.Point(3, 129);
+            this.buttonDone_PTS.Name = "buttonDone_PTS";
+            this.buttonDone_PTS.Size = new System.Drawing.Size(695, 35);
+            this.buttonDone_PTS.TabIndex = 3;
+            this.buttonDone_PTS.Text = "Найти";
+            this.buttonDone_PTS.UseVisualStyleBackColor = false;
+            this.buttonDone_PTS.Click += new System.EventHandler(this.button4_Click);
+            // 
             // groupBoxInPut_PTS
             // 
             this.groupBoxInPut_PTS.Controls.Add(this.textBoxShop_PTS);
@@ -161,37 +195,17 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             this.textBoxShop_PTS.TabIndex = 0;
             this.textBoxShop_PTS.TextChanged += new System.EventHandler(this.textBoxShop_PTS_TextChanged);
             // 
-            // buttonDone_PTS
+            // buttonMe_PTS
             // 
-            this.buttonDone_PTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.buttonDone_PTS.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonDone_PTS.Location = new System.Drawing.Point(3, 129);
-            this.buttonDone_PTS.Name = "buttonDone_PTS";
-            this.buttonDone_PTS.Size = new System.Drawing.Size(695, 35);
-            this.buttonDone_PTS.TabIndex = 3;
-            this.buttonDone_PTS.Text = "Найти";
-            this.buttonDone_PTS.UseVisualStyleBackColor = false;
-            this.buttonDone_PTS.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // textBoxChoice_PTS
-            // 
-            this.textBoxChoice_PTS.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxChoice_PTS.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBoxChoice_PTS.Location = new System.Drawing.Point(3, 20);
-            this.textBoxChoice_PTS.Multiline = true;
-            this.textBoxChoice_PTS.Name = "textBoxChoice_PTS";
-            this.textBoxChoice_PTS.ReadOnly = true;
-            this.textBoxChoice_PTS.Size = new System.Drawing.Size(695, 62);
-            this.textBoxChoice_PTS.TabIndex = 4;
-            this.textBoxChoice_PTS.Text = "1. Общие контакты\r\n2. Данные магазина\r\n3. Филиалы";
-            // 
-            // textBoxCategory_PTS
-            // 
-            this.textBoxCategory_PTS.Location = new System.Drawing.Point(6, 88);
-            this.textBoxCategory_PTS.Multiline = true;
-            this.textBoxCategory_PTS.Name = "textBoxCategory_PTS";
-            this.textBoxCategory_PTS.Size = new System.Drawing.Size(100, 35);
-            this.textBoxCategory_PTS.TabIndex = 5;
+            this.buttonMe_PTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonMe_PTS.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonMe_PTS.Location = new System.Drawing.Point(0, 352);
+            this.buttonMe_PTS.Name = "buttonMe_PTS";
+            this.buttonMe_PTS.Size = new System.Drawing.Size(86, 33);
+            this.buttonMe_PTS.TabIndex = 3;
+            this.buttonMe_PTS.Text = "Спавка";
+            this.buttonMe_PTS.UseVisualStyleBackColor = false;
+            this.buttonMe_PTS.Click += new System.EventHandler(this.buttonMe_PTS_Click);
             // 
             // FormMain
             // 
@@ -229,6 +243,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
         private System.Windows.Forms.Button buttonDone_PTS;
         private System.Windows.Forms.TextBox textBoxChoice_PTS;
         private System.Windows.Forms.TextBox textBoxCategory_PTS;
+        private System.Windows.Forms.Button buttonMe_PTS;
     }
 }
 

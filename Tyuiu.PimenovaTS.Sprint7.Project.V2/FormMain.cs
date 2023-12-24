@@ -53,5 +53,11 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
         {
             //
         }
+
+        private void buttonMe_PTS_Click(object sender, EventArgs e)
+        {
+            FormMe formMe = new FormMe();
+            formMe.ShowDialog();
+        }
     }
 }
