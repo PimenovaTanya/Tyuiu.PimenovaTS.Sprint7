@@ -52,7 +52,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             // 
             // panelMain_PTS
             // 
-            this.panelMain_PTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panelMain_PTS.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.panelMain_PTS.Controls.Add(this.buttonMe_PTS);
             this.panelMain_PTS.Controls.Add(this.buttonAbout_PTS);
             this.panelMain_PTS.Controls.Add(this.buttonHelp_PTS);
@@ -66,7 +66,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             // 
             // buttonAbout_PTS
             // 
-            this.buttonAbout_PTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonAbout_PTS.BackColor = System.Drawing.Color.SlateGray;
             this.buttonAbout_PTS.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonAbout_PTS.Location = new System.Drawing.Point(0, 385);
             this.buttonAbout_PTS.Name = "buttonAbout_PTS";
@@ -78,7 +78,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             // 
             // buttonHelp_PTS
             // 
-            this.buttonHelp_PTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonHelp_PTS.BackColor = System.Drawing.Color.SlateGray;
             this.buttonHelp_PTS.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonHelp_PTS.Location = new System.Drawing.Point(0, 419);
             this.buttonHelp_PTS.Name = "buttonHelp_PTS";
@@ -90,7 +90,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             // 
             // buttonMain_PTS
             // 
-            this.buttonMain_PTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonMain_PTS.BackColor = System.Drawing.Color.SlateGray;
             this.buttonMain_PTS.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonMain_PTS.Image = ((System.Drawing.Image)(resources.GetObject("buttonMain_PTS.Image")));
             this.buttonMain_PTS.Location = new System.Drawing.Point(0, 0);
@@ -130,6 +130,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             // 
             // groupBoxResult_PTS
             // 
+            this.groupBoxResult_PTS.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.groupBoxResult_PTS.Controls.Add(this.textBoxCategory_PTS);
             this.groupBoxResult_PTS.Controls.Add(this.textBoxChoice_PTS);
             this.groupBoxResult_PTS.Controls.Add(this.buttonDone_PTS);
@@ -152,7 +153,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             // 
             // textBoxChoice_PTS
             // 
-            this.textBoxChoice_PTS.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxChoice_PTS.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBoxChoice_PTS.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxChoice_PTS.Location = new System.Drawing.Point(3, 20);
             this.textBoxChoice_PTS.Multiline = true;
@@ -164,7 +165,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             // 
             // buttonDone_PTS
             // 
-            this.buttonDone_PTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonDone_PTS.BackColor = System.Drawing.Color.SlateGray;
             this.buttonDone_PTS.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonDone_PTS.Location = new System.Drawing.Point(3, 129);
             this.buttonDone_PTS.Name = "buttonDone_PTS";
@@ -176,6 +177,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             // 
             // groupBoxInPut_PTS
             // 
+            this.groupBoxInPut_PTS.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.groupBoxInPut_PTS.Controls.Add(this.textBoxShop_PTS);
             this.groupBoxInPut_PTS.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBoxInPut_PTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -197,7 +199,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             // 
             // buttonMe_PTS
             // 
-            this.buttonMe_PTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonMe_PTS.BackColor = System.Drawing.Color.SlateGray;
             this.buttonMe_PTS.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonMe_PTS.Location = new System.Drawing.Point(0, 352);
             this.buttonMe_PTS.Name = "buttonMe_PTS";
