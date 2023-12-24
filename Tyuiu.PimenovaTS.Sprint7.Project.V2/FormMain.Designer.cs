@@ -29,6 +29,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelMain_PTS = new System.Windows.Forms.Panel();
             this.buttonAbout_PTS = new System.Windows.Forms.Button();
@@ -44,6 +45,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             this.groupBoxInPut_PTS = new System.Windows.Forms.GroupBox();
             this.textBoxShop_PTS = new System.Windows.Forms.TextBox();
             this.buttonMe_PTS = new System.Windows.Forms.Button();
+            this.toolTipInfo_PTS = new System.Windows.Forms.ToolTip(this.components);
             this.panelMain_PTS.SuspendLayout();
             this.panelTop_PTS.SuspendLayout();
             this.groupBoxResult_PTS.SuspendLayout();
@@ -73,6 +75,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             this.buttonAbout_PTS.Size = new System.Drawing.Size(86, 34);
             this.buttonAbout_PTS.TabIndex = 2;
             this.buttonAbout_PTS.Text = "О нас";
+            this.toolTipInfo_PTS.SetToolTip(this.buttonAbout_PTS, "Нажмите, чтобы узнать, как работает приложение");
             this.buttonAbout_PTS.UseVisualStyleBackColor = false;
             this.buttonAbout_PTS.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -85,6 +88,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             this.buttonHelp_PTS.Size = new System.Drawing.Size(86, 34);
             this.buttonHelp_PTS.TabIndex = 2;
             this.buttonHelp_PTS.Text = "Помощь";
+            this.toolTipInfo_PTS.SetToolTip(this.buttonHelp_PTS, "Нажмите, если у вас появились вопросы");
             this.buttonHelp_PTS.UseVisualStyleBackColor = false;
             this.buttonHelp_PTS.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -206,8 +210,14 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
             this.buttonMe_PTS.Size = new System.Drawing.Size(86, 33);
             this.buttonMe_PTS.TabIndex = 3;
             this.buttonMe_PTS.Text = "Спавка";
+            this.toolTipInfo_PTS.SetToolTip(this.buttonMe_PTS, "Информация о разработчике");
             this.buttonMe_PTS.UseVisualStyleBackColor = false;
             this.buttonMe_PTS.Click += new System.EventHandler(this.buttonMe_PTS_Click);
+            // 
+            // toolTipInfo_PTS
+            // 
+            this.toolTipInfo_PTS.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTipInfo_PTS.ToolTipTitle = "Подсказка";
             // 
             // FormMain
             // 
@@ -246,6 +256,7 @@ namespace Tyuiu.PimenovaTS.Sprint7.Project.V2
         private System.Windows.Forms.TextBox textBoxChoice_PTS;
         private System.Windows.Forms.TextBox textBoxCategory_PTS;
         private System.Windows.Forms.Button buttonMe_PTS;
+        private System.Windows.Forms.ToolTip toolTipInfo_PTS;
     }
 }
 
